@@ -204,7 +204,6 @@ export default {
   methods: {
     getFileType(url){
       let url1 = url.toLowerCase()
-      console.log(url.substring(url.lastIndexOf('.')))
       return url1.substring(url1.lastIndexOf('.')) === '.webm' || url1.substring(url1.lastIndexOf('.')) === '.mp4' ? 'vid' : 'img'
     },
     redirect(parameter){
